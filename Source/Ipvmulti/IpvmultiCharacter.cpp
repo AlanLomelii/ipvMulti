@@ -71,6 +71,7 @@ void AIpvmultiCharacter::NotifyControllerChanged()
 	}
 }
 
+
 void AIpvmultiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
@@ -91,6 +92,7 @@ void AIpvmultiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		UE_LOG(LogTemplateCharacter, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
 	}
 }
+
 
 void AIpvmultiCharacter::Move(const FInputActionValue& Value)
 {
